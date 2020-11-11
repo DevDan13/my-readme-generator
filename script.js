@@ -93,5 +93,10 @@ async function writeReadME(){
         ##Email
         
         ${email} please reach me here if you have questions or concerns.  
-        Any further ideas for the project are also appreciated.`
+        Any further ideas for the project are also appreciated.
+    `
+
+    fs.writeFile("README.md", myReadMe, (err) =>
+    err ? console.log(err) : console.log("Success")
+    );
 }
