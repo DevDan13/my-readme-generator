@@ -5,12 +5,12 @@ This Project takes the Users data and writes it to a README.md file
 
 ## Table of Contents
 
-* [Installation] (#installation)
-* [Usage] (#usage)
-* [License] (#license)
-* [Contributing] (#contributing)
-* [test] (#test)
-* [email] (#email)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [test](#test)
+* [email](#email)
 
 ## Installation
 
