@@ -1,7 +1,7 @@
 
-# README Generator
+# gnkgnklfg
 
-This Project takes the Users data and writes it to a README.md file
+fsdjm;dfsml;fsd
 
 ## Table of Contents
 
@@ -14,24 +14,26 @@ This Project takes the Users data and writes it to a README.md file
 
 ## Installation
 
-Use the command npm install ReadGen
+fsdkmfsdm;fsd
 
 ## Usage
 
-it does stuff
+dfsmdfsm;dfsml;fsd
 
 ## License
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
 
 ## Contributing
 
-If you have anything to add let me know!
+el;dfm;dfsm;dfs
 
 ## Test
 
-test instructions 
+dfsmkdfsmkdfsm;fsd
 
 ## Email
 
-dan1397732@gmail.com please reach me here if you have questions or concerns.  
+<a href="mymeail@gmail.com" alt="contact email">
+
+please reach me here if you have questions or concerns.  
 Any further ideas for the project are also appreciated.

@@ -58,45 +58,45 @@ async function getUserInput(){
 async function writeReadME(){
     const {title, description, installation, usage, license, contributing, test, email} = await getUserInput()
 
-    const myReadMe = `
-    # ${title}
-    
-    ${description}
-    
-    ## Table of Contents
+const myReadMe = `
+# ${title}
 
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contributing)
-    * [test](#test)
-    * [email](#email)
-    
-    ## Installation
-    
-    ${installation}
-    
-    ## Usage
-    
-    ${usage}
-    
-    ## License
-    ${license}
-    
-    ## Contributing
-    
-    ${contributing}
-    
-    ## Test
-    
-    ${test}
-    
-    ## Email
-    
-    <a href="${email}" alt="contact email">
-    
-    please reach me here if you have questions or concerns.  
-    Any further ideas for the project are also appreciated.
+${description}
+
+## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [test](#test)
+* [email](#email)
+
+## Installation
+
+${installation}
+
+## Usage
+
+${usage}
+
+## License
+${license}
+
+## Contributing
+
+${contributing}
+
+## Test
+
+${test}
+
+## Email
+
+<a href="${email}" alt="contact email">
+
+please reach me here if you have questions or concerns.  
+Any further ideas for the project are also appreciated.
 `
 
     fs.writeFile("MYREADME.md", myReadMe, (err) =>
