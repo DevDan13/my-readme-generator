@@ -48,14 +48,15 @@ async function getUserInput(){
                 message:"Where can users reach you for question?: ",
                 name: "email"
             },
-        ]);
+        ])
+        return data;
     } catch(error){
         console.log(error);
     } 
 }
 
 async function writeReadME(){
-    const {title, description, installation, usage, license, contributing, test, email} = await getUserInput
+    const {title, description, installation, usage, license, contributing, test, email} = await getUserInput()
 
     const myReadMe = `
         #${title}
@@ -96,7 +97,9 @@ async function writeReadME(){
         Any further ideas for the project are also appreciated.
     `
 
-    fs.writeFile("README.md", myReadMe, (err) =>
+    fs.writeFile("MYREADME.md", myReadMe, (err) =>
     err ? console.log(err) : console.log("Success")
     );
 }
+
+writeReadME();
