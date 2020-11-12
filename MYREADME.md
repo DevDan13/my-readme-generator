@@ -1,7 +1,7 @@
 
-# gnkgnklfg
+# ReadGen
 
-fsdjm;dfsml;fsd
+this project makes readme files
 
 ## Table of Contents
 
@@ -14,26 +14,23 @@ fsdjm;dfsml;fsd
 
 ## Installation
 
-fsdkmfsdm;fsd
+npm install ReadGen
 
 ## Usage
 
-dfsmdfsm;dfsml;fsd
+here are my usage instructions
 
 ## License
 [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
 
 ## Contributing
 
-el;dfm;dfsm;dfs
+I am open to contributions! any suggestions anyone has please contact me for potential collaboration.
 
 ## Test
 
-dfsmkdfsmkdfsm;fsd
+here will be my test instructions.
 
 ## Email
 
-<a href="mymeail@gmail.com" alt="contact email">
-
-please reach me here if you have questions or concerns.  
-Any further ideas for the project are also appreciated.
+please reach my by copying my email myEmail@gmail.com

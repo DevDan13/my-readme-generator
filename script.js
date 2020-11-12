@@ -93,10 +93,7 @@ ${test}
 
 ## Email
 
-<a href="${email}" alt="contact email">
-
-please reach me here if you have questions or concerns.  
-Any further ideas for the project are also appreciated.
+${email}
 `
 
     fs.writeFile("MYREADME.md", myReadMe, (err) =>
