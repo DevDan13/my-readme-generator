@@ -26,7 +26,7 @@ async function getUserInput(){
             },
             {
                 type: "list",
-                message:"Please select the license you wish to use: ",
+                message:"Please select the license you wish to use (Apache, MIT, IBM, Mozilla, Eclipse): ",
                 choices: ["[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
                  "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
                  "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)",
