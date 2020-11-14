@@ -98,7 +98,7 @@ ${test}
 
 ## Questions
 
-${github}
+[${github}](https://github.com/${github})
 
 ${email}
 `
