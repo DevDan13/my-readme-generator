@@ -1,9 +1,9 @@
 
 # ReadGen
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
-this project generates a professional README.md for the user
+makes README.md's
 
 ## Table of Contents
 
@@ -16,22 +16,22 @@ this project generates a professional README.md for the user
 
 ## Installation
 
-npm install ReadGen
+fdgdfgdf
 
 ## Usage
 
-Please answer all prompts asked in the terminal to generate a README.md file
+rtgghfgh
 
 ## Contributing
 
-I am open to any and all contribution that could be made to my project.
+hfgbkfgklfg
 
 ## Test
 
-test instrucions
+dfsjkgkfg
 
 ## Questions
 
-DevDan13
+[DevDan13](https://github.com/DevDan13)
 
-example@gmail.com
+email.gmail.com
