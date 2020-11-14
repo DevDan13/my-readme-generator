@@ -1,7 +1,9 @@
 
 # ReadGen
 
-this project makes readme files
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+this project generates a professional README.md for the user
 
 ## Table of Contents
 
@@ -10,7 +12,7 @@ this project makes readme files
 * [License](#license)
 * [Contributing](#contributing)
 * [test](#test)
-* [email](#email)
+* [Questions](#Questions)
 
 ## Installation
 
@@ -18,19 +20,18 @@ npm install ReadGen
 
 ## Usage
 
-here are my usage instructions
-
-## License
-[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
+Please answer all prompts asked in the terminal to generate a README.md file
 
 ## Contributing
 
-I am open to contributions! any suggestions anyone has please contact me for potential collaboration.
+I am open to any and all contribution that could be made to my project.
 
 ## Test
 
-here will be my test instructions.
+test instrucions
 
-## Email
+## Questions
 
-please reach my by copying my email myEmail@gmail.com
+DevDan13
+
+example@gmail.com
