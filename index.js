@@ -43,7 +43,13 @@ async function getUserInput(){
                 type: "input",
                 message:"Please provide test instructions: ",
                 name: "test"
-            },{
+            },
+            {
+                type: "input",
+                message:"Please enter your GitHub username: ",
+                name: "github"
+            },
+            {
                 type: "input",
                 message:"Where can users reach you for question?: ",
                 name: "email"
@@ -56,10 +62,12 @@ async function getUserInput(){
 }
 
 async function writeReadME(){
-    const {title, description, installation, usage, license, contributing, test, email} = await getUserInput()
+    const {title, description, installation, usage, license, contributing, test, github, email} = await getUserInput()
 
 const myReadMe = `
 # ${title}
+
+${license}
 
 ${description}
 
@@ -70,7 +78,7 @@ ${description}
 * [License](#license)
 * [Contributing](#contributing)
 * [test](#test)
-* [email](#email)
+* [Questions](#Questions)
 
 ## Installation
 
@@ -80,9 +88,6 @@ ${installation}
 
 ${usage}
 
-## License
-${license}
-
 ## Contributing
 
 ${contributing}
@@ -91,7 +96,9 @@ ${contributing}
 
 ${test}
 
-## Email
+## Questions
+
+${github}
 
 ${email}
 `
