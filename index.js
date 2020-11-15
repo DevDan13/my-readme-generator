@@ -27,11 +27,7 @@ async function getUserInput(){
             {
                 type: "list",
                 message:"Please select the license you wish to use (Apache, MIT, IBM, Mozilla, Eclipse): ",
-                choices: ["[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
-                 "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
-                 "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)",
-                 "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)",
-                 "[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)"],
+                choices: ["Apache","MIT","IBM","Mozilla","Eclipse"],
                 name: "license"
             },
             {
@@ -62,7 +58,29 @@ async function getUserInput(){
 }
 
 async function writeReadME(){
-    const {title, description, installation, usage, license, contributing, test, github, email} = await getUserInput()
+    let {title, description, installation, usage, license, contributing, test, github, email} = await getUserInput()
+
+    switch(license){
+        case "Apache":
+        license = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+        break;
+
+        case "MIT":
+        license = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+        break;
+
+        case "IBM":
+        license = "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)"
+        break;
+
+        case "Mozilla":
+        license = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
+        break;
+
+        case "Eclipse":
+        license = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+        break;
+    }
 
 const myReadMe = `
 # ${title}
@@ -98,9 +116,9 @@ ${test}
 
 ## Questions
 
-[${github}](https://github.com/${github})
+Check out more of my work at my GitHub profile [${github}](https://github.com/${github}) 
 
-${email}
+If you have any further questions, you can reach me at ${email}.
 `
 
     fs.writeFile("MYREADME.md", myReadMe, (err) =>
