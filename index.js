@@ -1,6 +1,10 @@
+//my dependencies
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+
+//this function uses a try catch, catch logging an error should one arise. this function is also an async function where our data object 
+//awaits the answers for the inquirer prompts from the user.  data is returned into the writeReadMe function.
 async function getUserInput(){
     try{
         const data = await inquirer.prompt([
@@ -26,7 +30,7 @@ async function getUserInput(){
             },
             {
                 type: "list",
-                message:"Please select the license you wish to use (Apache, MIT, IBM, Mozilla, Eclipse): ",
+                message:"Please select the license you wish to use: ",
                 choices: ["Apache","MIT","IBM","Mozilla","Eclipse"],
                 name: "license"
             },
@@ -57,9 +61,11 @@ async function getUserInput(){
     } 
 }
 
+//await async is used to keep the order of the statements flowing as it should...IN ORDER!  data is deconstructed and used in the remplate literal variable.
 async function writeReadME(){
     let {title, description, installation, usage, license, contributing, test, github, email} = await getUserInput()
 
+    //switch statement written to allow the user to select from the license name rather than the entire links in the terminal.
     switch(license){
         case "Apache":
         license = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
@@ -81,6 +87,7 @@ async function writeReadME(){
         license = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
         break;
     }
+//template literal variable completely written in markdown.
 
 const myReadMe = `
 # ${title}
@@ -120,10 +127,11 @@ Check out more of my work at my GitHub profile [${github}](https://github.com/${
 
 If you have any further questions, you can reach me at ${email}.
 `
-
+    //file system write file function that writes MYREADME.md with the third parameter being a callback function using a 
+    //terniary operator to log an error if one occurs else log success!
     fs.writeFile("MYREADME.md", myReadMe, (err) =>
     err ? console.log(err) : console.log("Success")
     );
 }
-
+//the call to writeReadMe to our code can run.
 writeReadME();
